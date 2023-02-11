@@ -53,7 +53,7 @@ window.addEventListener('scroll',() => {
     let scrollTop = document.documentElement.scrollTop;
     for (let i=0; i<animation.length;i++){
         let sectionHeight=animation[i].offsetTop;
-        if(scrollTop+400 > sectionHeight){
+        if(scrollTop+500 > sectionHeight){
             animation[i].style.opacity=1;
         }
     }
@@ -63,7 +63,7 @@ const contentDatetime=document.querySelector('.content__datetime');
 window.addEventListener('scroll',() => {
     let scrollTop = document.documentElement.scrollTop;
     let sectionHeight=contentDatetime.offsetTop;
-        if(scrollTop + 400> sectionHeight){
+        if(scrollTop + 500> sectionHeight){
             contentDatetime.style.opacity='1'
             contentDatetime.style.transform='translateX(0px)'
         }
@@ -74,7 +74,7 @@ const contentLocation=document.querySelector('.content__location');
 window.addEventListener('scroll',() => {
     let scrollTop = document.documentElement.scrollTop;
     let sectionHeight=contentLocation.offsetTop;
-        if(scrollTop + 400> sectionHeight){
+        if(scrollTop + 500> sectionHeight){
             contentLocation.style.opacity='1'
             contentLocation.style.transform='translateX(0px)'
         }
